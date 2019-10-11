@@ -19,15 +19,15 @@
 	    "Gateway"
   	],
   	"require" : {
-        "php" : ">=5.5",
+        "php": ">=5.5.0"
     },
      "config": {
         "platform": {
-            "php": ">=5.5"
+            "php": "5.5"
         }
     },
     "support": {
-        "issues": "https://github.com/simplyblock/sb-php-sdk/issues",
+        "issues": "https://github.com/simplyblock/sb-php-sdk/issues"
     },
 	"authors": [ { "name": "Mahesh Lakher", "email": "mahesh.lakher@syncrasytech.com" } ],
 	"license": "ISC",
