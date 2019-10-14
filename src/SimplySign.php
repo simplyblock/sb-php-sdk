@@ -1,4 +1,5 @@
 <?php
+namespace SimplySign;
 
 Class SimplySign{
 
@@ -82,9 +83,17 @@ Class SimplySign{
 		curl_close($curl);
 
 		if ($err) {
-			echo "Curl Error - ".$err; 
+			$response['success'] = false;
+			$response['errors'][] = $err;
+			return json_encode($response);
 		} else {
-			echo $response; 
+			$response_decode = json_decode($response);
+			if(!trim($response_decode->success))
+			{
+				$error[] = $response_decode->message;
+				$response_decode->errors = $error;
+			}
+			return json_encode($response_decode);
 		}
 	} 
 }

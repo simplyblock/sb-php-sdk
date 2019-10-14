@@ -18,6 +18,7 @@
 	    "API",
 	    "Gateway"
   	],
+    "minimum-stability": "dev",
   	"require" : {
         "php": ">=5.5.0"
     },
@@ -25,6 +26,11 @@
         "platform": {
             "php": "5.5"
         }
+    },
+    "autoload": {
+      "psr-4": {
+        "SimplySign\\":"src/"
+      }
     },
     "support": {
         "issues": "https://github.com/simplyblock/sb-php-sdk/issues"

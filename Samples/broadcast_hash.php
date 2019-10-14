@@ -1,6 +1,6 @@
 <?php
-require '../SimplySign/SimplySign.php';
-
+include '../src/SimplySign.php';
+use SimplySign\SimplySign;
 // Required Data
 $publicKey = "hmac_pub_1";
 $privateKey = "hmac_priv_1";
